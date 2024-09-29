@@ -1,0 +1,17 @@
+name: Ping
+on:
+  repository_dispatch:
+    types: [run-ping]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo string
+        run: echo "welcome to sai 127.0.0.1"
+      - name: file create
+        run: touch sai.txt
+      - name: list
+        run: ls
+        
+
+    
